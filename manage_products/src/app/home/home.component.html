@@ -1,0 +1,162 @@
+<app-header></app-header>
+<div class="container mt-5 mb-5">
+  <form class="my-4">
+    <b>Filter</b>
+    <div class="row mb-4 mt-2">
+      <div class="col-6 form-group">
+        <label for="exampleFormControlInput1">Keyword</label>
+        <input
+          type="text"
+          class="form-control mt-1"
+          name="productName"
+          id="exampleFormControlInput1"
+          placeholder="Enter product name"
+          [(ngModel)]="productName"
+        />
+      </div>
+      <div class="col-6 form-group">
+        <label for="exampleFormControlSelect1">Category</label>
+        <select
+          class="form-control mt-1"
+          id="exampleFormControlSelect1"
+          name="categoryId"
+          [(ngModel)]="categoryId"
+        >
+          <option value="">All</option>
+          <option *ngFor="let category of categories" value="{{ category.id }}">
+            {{ category.name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="d-flex justify-content-end">
+      <button type="button" class="btn btn-light px- m-1" (click)="onClear()">
+        Reset
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary px-3 m-1"
+        (click)="filterChanged()"
+      >
+        Search
+      </button>
+    </div>
+  </form>
+  <div class="d-flex justify-content-end mb-2">
+    <button
+      type="button"
+      class="btn btn-warning px-4 m-1"
+      routerLink="/add-product"
+    >
+      Add Product
+    </button>
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col" class="text-center">STT</th>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Category</th>
+        <th scope="col">Price ($)</th>
+        <th scope="col">Color</th>
+        <th scope="col">Description</th>
+        <th scope="col" class="text-center">Act</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products; let i = index">
+        <th scope="row" class="text-center">{{ i + 1 }}</th>
+        <th scope="row" class="col-2">{{ product.id }}</th>
+        <td>{{ product.name }}</td>
+        <td>{{ product.category.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.color }}</td>
+        <td class="col-3">{{ product.description }}</td>
+        <td class="text-center">
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-secondary m-1"
+            routerLink="/edit-product/{{ product.id }}"
+          >
+            <i class="fa fa-edit"></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-secondary m-1"
+            routerLink="/detail-product/{{ product.id }}"
+          >
+            <i class="fa fa-eye"></i>
+          </button>
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-secondary m-1"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            (click)="openModalDel(product.id)"
+          >
+            <i class="fa fa-trash"></i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Modal -->
+  <div
+    class="col-6 alert alert-warning fixed-top {{
+      productDelId ? '' : 'd-none'
+    }}"
+    role="alert"
+    style="top: 250px; left: 350px"
+  >
+    <div class="modal-body">
+      Confirm deletion of product ID {{ productDelId }}!
+    </div>
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-secondary m-1"
+        data-dismiss="modal"
+        (click)="openModalDel('')"
+      >
+        Close
+      </button>
+      <button
+        type="button"
+        class="btn btn-warning m-1"
+        (click)="deleteProduct()"
+      >
+        Agree
+      </button>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+<div class="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">Confirm data deletion!</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary" (click)="deleteProduct()">
+          Del
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

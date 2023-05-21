@@ -1,0 +1,187 @@
+{
+  "categories": [
+    {
+      "id": "c164f2a2-2e49-4b93-8dfc-0cea430fb0c0",
+      "name": "Shoes"
+    },
+    {
+      "id": "42da5cad-292b-4fbb-8251-f659ebeca4e5",
+      "name": "Toys"
+    },
+    {
+      "id": "84b323f4-7c40-4a32-bc8e-c0d5db92e46f",
+      "name": "Kids"
+    }
+  ],
+  "products": [
+    {
+      "id": "41bfafd9-880d-4b82-b04c-baab5e5223a6",
+      "name": "Practical Soft Computer",
+      "color": "blue",
+      "price": 358,
+      "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+      "category": {
+        "id": "c164f2a2-2e49-4b93-8dfc-0cea430fb0c0",
+        "name": "Shoes"
+      },
+      "updatedAt": 1684669070483
+    },
+    {
+      "id": "92c0cf38-ac48-4b22-85d4-bf0dafd28ee2",
+      "name": "Incredible Fresh Ball",
+      "color": "orange",
+      "price": 584,
+      "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+      "category": {
+        "id": "c164f2a2-2e49-4b93-8dfc-0cea430fb0c0",
+        "name": "Shoes"
+      }
+    },
+    {
+      "id": "5feb92dd-3b3f-4a7c-a353-822ef80d37d8",
+      "name": "Awesome Soft Pants",
+      "color": "violet",
+      "price": 942,
+      "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "category": {
+        "id": "c164f2a2-2e49-4b93-8dfc-0cea430fb0c0",
+        "name": "Shoes"
+      }
+    },
+    {
+      "id": "309740da-fac7-43b3-a065-308c9f17a766",
+      "name": "Licensed Frozen Cheese",
+      "color": "cyan",
+      "price": 921,
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "category": {
+        "id": "c164f2a2-2e49-4b93-8dfc-0cea430fb0c0",
+        "name": "Shoes"
+      }
+    },
+    {
+      "id": "d1aafe1b-5f09-4950-b7d5-d547de3628b9",
+      "name": "Gorgeous Fresh Tuna",
+      "color": "green",
+      "price": 59,
+      "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+      "category": {
+        "id": "42da5cad-292b-4fbb-8251-f659ebeca4e5",
+        "name": "Toys"
+      }
+    },
+    {
+      "id": "86137dea-915a-4883-b8a6-d42b69fa374e",
+      "name": "Intelligent Metal Towels",
+      "color": "maroon",
+      "price": 577,
+      "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+      "category": {
+        "id": "42da5cad-292b-4fbb-8251-f659ebeca4e5",
+        "name": "Toys"
+      }
+    },
+    {
+      "id": "c935b14e-7f44-49ce-a043-b01976a15524",
+      "name": "Ergonomic Concrete Soap",
+      "color": "tan",
+      "price": 876,
+      "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+      "category": {
+        "id": "42da5cad-292b-4fbb-8251-f659ebeca4e5",
+        "name": "Toys"
+      }
+    },
+    {
+      "id": "83a408cd-75ae-4aea-9860-97a00ca988d8",
+      "name": "Unbranded Metal Fish",
+      "color": "magenta",
+      "price": 437,
+      "description": "The Football Is Good For Training And Recreational Purposes",
+      "category": {
+        "id": "42da5cad-292b-4fbb-8251-f659ebeca4e5",
+        "name": "Toys"
+      }
+    },
+    {
+      "id": "3dcd6d28-1274-418e-8aee-664d0a6e35c5",
+      "name": "Incredible Granite Chair",
+      "color": "purple",
+      "price": 793,
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "category": {
+        "id": "84b323f4-7c40-4a32-bc8e-c0d5db92e46f",
+        "name": "Kids"
+      }
+    },
+    {
+      "id": "b446eeb8-67a3-4961-bc13-f4a3f4b2767f",
+      "name": "Incredible Concrete Towels",
+      "color": "teal",
+      "price": 184,
+      "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+      "category": {
+        "id": "84b323f4-7c40-4a32-bc8e-c0d5db92e46f",
+        "name": "Kids"
+      }
+    },
+    {
+      "id": "36f6fb65-69af-4654-b78d-954ae1d7f09a",
+      "name": "Awesome Frozen Bacon",
+      "color": "azure",
+      "price": 810,
+      "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+      "category": {
+        "id": "84b323f4-7c40-4a32-bc8e-c0d5db92e46f",
+        "name": "Kids"
+      }
+    },
+    {
+      "id": "e9a24d7e-bb02-411a-ac07-10fd06bc4a2f",
+      "name": "Practical Wooden Pants",
+      "color": "magenta",
+      "price": 824,
+      "description": "The Football Is Good For Training And Recreational Purposes",
+      "category": {
+        "id": "84b323f4-7c40-4a32-bc8e-c0d5db92e46f",
+        "name": "Kids"
+      }
+    },
+    {
+      "id": "ybiZp-4",
+      "name": "",
+      "description": "",
+      "color": "",
+      "price": 0,
+      "category": {},
+      "createdAt": 1684667299809
+    },
+    {
+      "id": "9tHTqbC",
+      "name": "",
+      "description": "",
+      "color": "",
+      "price": 0,
+      "category": {
+        "id": "c164f2a2-2e49-4b93-8dfc-0cea430fb0c0",
+        "name": "Shoes"
+      },
+      "createdAt": 1684667474147
+    },
+    {
+      "id": "vGBmytC",
+      "name": "",
+      "description": "",
+      "color": "",
+      "price": 0,
+      "category": {
+        "id": "84b323f4-7c40-4a32-bc8e-c0d5db92e46f",
+        "name": "Kids"
+      },
+      "createdAt": 1684667614926
+    }
+  ],
+  "profile": {
+    "name": "Po"
+  }
+}

@@ -1,0 +1,30 @@
+<div class="login-container">
+  <div class="logo">Manage Products</div>
+  <div class="login-form">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Username</label>
+      <input
+        type="username"
+        name="username"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="userName"
+        placeholder="Username"
+        [(ngModel)]="userName"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input
+        type="password"
+        name="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="Password"
+        [(ngModel)]="password"
+      />
+    </div>
+    <button class="btn btn-secondary mt-2 mb-2" (click)="login()">Login</button>
+    <div class="error">{{ errorMsg }}</div>
+  </div>
+</div>
