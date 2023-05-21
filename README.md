@@ -16,5 +16,7 @@ This project used Json-server, nodeJs and Faker.js
 
 2. Run npm start in a separate terminal window to launch the web and RESTful API server
 
+3. Post: localhost:3000/api
+
 
 **Info page login: username: anhhtn / pass: 12345
